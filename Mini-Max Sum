@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int arr[5],sum=0,mnsum,mxsum;
+    int i;
+    long long int mx=0;
+    for(i=0;i<5;i++)
+    {
+        cin>>arr[i];
+        if(arr[i]>mx)
+            mx=arr[i];
+    }
+    long long int mn=mx;
+    for(i=0;i<5;i++)
+    {
+        if(arr[i]<mn)
+            mn=arr[i];
+    }
+    for(i=0;i<5;i++)
+    {
+        sum=sum+arr[i];
+    }
+    mnsum=sum-mx;
+    mxsum=sum-mn;
+    cout<<mnsum<<" "<<mxsum;
+
+return 0;
+}
