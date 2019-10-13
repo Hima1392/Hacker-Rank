@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int i,j,k;
+    for(i=0,k=n-1;i<n;i++,k--)
+    {
+        for(j=0;j<k;j++)//right align tai agee proyojonmot space print korte hbe.
+        {
+            cout<<" ";
+        }
+        for(j=0;j<=i;j++)
+        {
+            cout<<"#";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
