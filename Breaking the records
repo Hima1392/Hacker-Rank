@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,i,a[1000];
+    cin>>n;
+    int m=0,l=0;
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+
+    }
+    int mx=a[0];
+    int mn=a[0];
+    for(i=1;i<n;i++)
+    {
+        if(a[i]>mx)
+        {
+            mx=a[i];
+            m++;
+        }
+    }
+    for(i=1;i<n;i++)
+    {
+        if(a[i]<mn)
+        {
+            mn=a[i];
+            l++;
+        }
+    }
+
+    cout<<m<<" "<<l;
+    return 0;
+
+}
+ ;
