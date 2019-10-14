@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x1,x2,v1,v2;
+    cin>>x1>>v1>>x2>>v2;
+    int sum1=x1+v1,sum2=x2+v2;
+    int fg=0;
+    while(sum1<=sum2)
+    {
+      if(sum1==sum2)
+      {
+          fg=1;
+          break;
+      }
+      sum1=sum1+v1;
+      sum2=sum2+v2;
+      if(sum1>sum2)break;
+    }
+    if(fg==1)cout<<"YES";
+    else cout<<"NO";
+
+
+
+}
