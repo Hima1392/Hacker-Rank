@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int s,t,a,b,m,n,i,x,y;
+    cin>>s>>t;
+    cin>>a>>b;
+    cin>>m>>n;
+    int apple=0,orange=0;
+    for(i=0;i<m;i++)
+    {
+        cin>>x;
+        if((a+x)>=s && (a+x)<=t)apple++;
+
+    }
+    for(i=0;i<n;i++)
+    {
+        cin>>y;
+        if((b+y)>=s && (b+y)<=t)orange++;
+    }
+    cout<<apple<<endl;
+    cout<<orange;
+    return 0;
+
+}
